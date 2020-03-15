@@ -1,0 +1,6 @@
+/Users/dv/Documents/Development/GithubRepos/ASP.NET-Core-Web-API-with-Basic-Unit-and-Integration-Testing-for-CRUD-Operations/WebApi/obj/Debug/netcoreapp3.1/WebApi.csprojAssemblyReference.cache
+/Users/dv/Documents/Development/GithubRepos/ASP.NET-Core-Web-API-with-Basic-Unit-and-Integration-Testing-for-CRUD-Operations/WebApi/obj/Debug/netcoreapp3.1/staticwebassets/WebApi.StaticWebAssets.Manifest.cache
+/Users/dv/Documents/Development/GithubRepos/ASP.NET-Core-Web-API-with-Basic-Unit-and-Integration-Testing-for-CRUD-Operations/WebApi/obj/Debug/netcoreapp3.1/staticwebassets/WebApi.StaticWebAssets.xml
+/Users/dv/Documents/Development/GithubRepos/ASP.NET-Core-Web-API-with-Basic-Unit-and-Integration-Testing-for-CRUD-Operations/WebApi/obj/Debug/netcoreapp3.1/WebApi.MvcApplicationPartsAssemblyInfo.cache
+/Users/dv/Documents/Development/GithubRepos/ASP.NET-Core-Web-API-with-Basic-Unit-and-Integration-Testing-for-CRUD-Operations/WebApi/obj/Debug/netcoreapp3.1/WebApi.AssemblyInfoInputs.cache
+/Users/dv/Documents/Development/GithubRepos/ASP.NET-Core-Web-API-with-Basic-Unit-and-Integration-Testing-for-CRUD-Operations/WebApi/obj/Debug/netcoreapp3.1/WebApi.AssemblyInfo.cs
