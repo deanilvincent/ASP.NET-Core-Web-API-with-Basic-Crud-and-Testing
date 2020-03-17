@@ -30,8 +30,9 @@ namespace WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-
-            services.AddDbContext<AppDbContext>(options => options.UseNpgsql(@"Server=127.0.0.1;Database=BasicCrudAppDb;User id=postgres;Password=H3yyyY0(_)1234;Integrated Security=false;"));
+            // postgresql
+            // services.AddDbContext<AppDbContext>(options => options.UseNpgsql(@"Server=127.0.0.1;Database=BasicCrudAppDb;User id=postgres;Password=H3yyyY0(_)1234;Integrated Security=false;"));
+            services.AddDbContext<AppDbContext>(options => options.UseSqlServer(@"Server=tcp:mvsandboxserveraccenture.database.windows.net,1433;Initial Catalog=testdb01;Persist Security Info=False;User ID=ssa;Password=JejeM0nster;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"));
 
             // repos
             services.AddTransient<ICustomerRepo, CustomerRepo>();

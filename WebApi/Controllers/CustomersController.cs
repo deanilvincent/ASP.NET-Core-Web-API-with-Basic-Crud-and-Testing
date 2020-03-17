@@ -36,9 +36,6 @@ namespace WebApi.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(Customer customer)
         {
-            if (!ModelState.IsValid)
-                return BadRequest();
-
             if (!await customerRepo.Create(customer))
                 return BadRequest();
 
@@ -48,11 +45,8 @@ namespace WebApi.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, Customer customer)
         {
-            if (id == 0)
+            if (id == 0 || !await customerRepo.IsCustomerIdExists(id))
                 return NotFound();
-
-            if (!ModelState.IsValid)
-                return BadRequest();
 
             if (!await customerRepo.Update(customer))
                 return BadRequest();
@@ -63,7 +57,7 @@ namespace WebApi.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteById(int id)
         {
-            if (id == 0)
+            if (id == 0 || !await customerRepo.IsCustomerIdExists(id))
                 return NotFound();
 
             if (!await customerRepo.DeleteById(id))
